@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100italic,100,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/jquery.nouislider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nouislider.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/interface.js"></script>
+
+    <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header id="header" role="banner">
+	    	<div class="container">
+			    <nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand pull-left" href="#">
+					      	<img alt="" src="img/brand.png">
+					      	<span class="brand-name">Marshrutki<span class="dot">.net</span></span>
+					      </a>
+					    </div>
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    	<form class="visible-xs navbar-form navbar-left" role="search">
+						        <div class="form-group">
+						          <input type="text" class="form-control" placeholder="Поиск маршрута">
+						        </div>
+						        <button type="submit" class="btn btn-navbar">Найти маршрут</button>
+					      	</form>
+					        <ul class="nav navbar-nav navbar-right">
+				       		<li class="active"><a href="#">Главная</a></li>
+				            <li><a href="#">О проекте</a></li>
+				            <li><a href="#">Обратная связь</a></li>
+					      </ul>
+					    </div>
+					  </div>
+				</nav>
+				
+	    	</div>
+	    </header>
+	    <main id="content">
+	    	<div id="map">
+		    	<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kVYT3FlyCoQuM8MpqsKcLjFBSUiQsYfN&width=100%&height=400">
+		    	</script>
+		    	<div class="hidden-xs search-box ui-draggable">
+			        <form  role="search">
+				        <div class="input-group">
+				        	<input type="text" class="form-control"  placeholder="Поиск маршрута" autocomplete="off"> 
+						  	<span class="input-group-btn"><button  type="submit" class="btn btn-success">Найти</button></span>
+						</div>
+						<div class="control">
+							<div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search" checked type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По номеру
+						        </label>
+						    </div>
+						    <div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search"   type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По остановке
+						        </label>
+						    </div>
+						     <div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search"   type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По улице
+						        </label>
+						    </div>
+						    <div id="search-box-slider">
+								<div class="slider"></div>
+							</div>
+						</div>
+			        </form>
+
+			    </div>
+	    	</div>
+	    	<div role="main">
+	    		<div class="container">
+	    		<h1 class="bordered"><span>Добро пожаловать на сайт marshrutki.net h1</span></h1>
+	    		<div class="two-columns">
+	    		<p>Прокурор потребовал приговорить Константина Лебедева к пяти годам лишения свободы, сообщает корреспондент «Ленты.ру». Адвокаты попросили суд дать активисту условный срок. Мосгорсуд вынесет приговор 25 апреля.</p>
+	    		<p>
+				Лебедева обвиняют в организации беспорядков на Болотной площади 6 мая 2012 года. Кроме того, по версии обвинения, он планировал и новые беспорядки на территории РФ.</p>
+
+				<p>Как заявил в суде прокурор, организация столкновений на Болотной площади обошлась грузинскому политику Гиви Таргамадзе в полмиллиона рублей. Кроме того, по версии обвинения, он и в дальнейшем платил Лебедеву, Сергею Удальцову и Леониду Развозжаеву, которых СК РФ также считает <a href="">организация столкновений</a> организаторами событий 6 мая.</p>
+
+				<p>Дело Константина Лебедева рассматривается в особом порядке, так как он полностью признал свою вину. Показания Лебедева, данные в связи с заключением сделки со следствием, в суде огласили в закрытом порядке.</p>
+
+				<p>Константин Лебедев был задержан и помещен под стражу в октябре 2012 года. Изначально проходил по делу о подготовке беспорядков в РФ, которое возбудили осенью 2012 года после выхода в эфир телепередачи "Анатомия протеста-2". В ней были показаны кадры со встречи Лебедева, Развозжаева, Удальцова и Таргамадзе. На этом совещании, которое, по версии СК РФ, состоялось в июне 2012 года якобы обсуждалась возможность организации беспорядков в РФ. Лебедев признал запись подлинной.</p>
+
+				<p>Впоследствии это дело было соединено в одно производство с «болотным делом», возбужденным в мае 2012 года по следам столкновений на Болотной площади между полицейскими и участниками «Марша миллионов».</p>
+				<a href="http://marshrutki.net/route/isearch">http://marshrutki.net/route/isearch</a>
+				</div>
+				</div>
+		   
+			</div>
+			<div class="banners">
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-6">
+		    				<div class="banner"></div>
+		    			</div>
+		    			<div class="col-md-6">
+		    				<div class="banner"></div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>    
+	    </main>
+	</div>
+	<footer id="footer" role="contentinfo">
+    	<div class="container">
+    		<nav class="hidden-xs nav-bottom">
+	    		<ul>
+	    			<li><a href="">Главная</a></li>
+	    			<li><a href="">О проекте</a></li>
+	    			<li><a href="">Обратная связь</a></li>
+    			</ul>
+    		</nav>
+    		<a class="brand" href="#">
+	      		<img alt="" src="img/brand.png">
+	      	</a>
+	      	<p class="copy">© 2014 Marshrutki.net</p>
+    	</div>
+	</footer>
+  </body>
+</html>
