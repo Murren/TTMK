@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100italic,100,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/jquery.nouislider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nouislider.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/interface.js"></script>
+
+    <!--[if lt IE 9]>
+     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header id="header" role="banner">
+	    	<div class="container">
+			    <nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand pull-left" href="#">
+					      	<img alt="" src="img/brand.png">
+					      	<span class="brand-name">Marshrutki<span class="dot">.net</span></span>
+					      </a>
+					    </div>
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    	<form class="visible-xs navbar-form navbar-left" role="search">
+						        <div class="form-group">
+						          <input type="text" class="form-control" placeholder="Поиск маршрута">
+						        </div>
+						        <button type="submit" class="btn btn-navbar">Найти маршрут</button>
+					      	</form>
+					        <ul class="nav navbar-nav navbar-right">
+				       		<li class="active"><a href="#">Главная</a></li>
+				            <li><a href="#">О проекте</a></li>
+				            <li><a href="#">Обратная связь</a></li>
+					      </ul>
+					    </div>
+					  </div>
+				</nav>
+				
+	    	</div>
+	    </header>
+	    <main id="content">
+	    	<div id="map">
+		    	<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kVYT3FlyCoQuM8MpqsKcLjFBSUiQsYfN&width=100%&height=400">
+		    	</script>
+		    	<div class="hidden-xs search-box ui-draggable">
+			        <form  role="search">
+				        <div class="input-group">
+				        	<input type="text" class="form-control"  placeholder="Поиск маршрута" autocomplete="off"> 
+						  	<span class="input-group-btn"><button  type="submit" class="btn btn-success">Найти</button></span>
+						</div>
+						<div class="control">
+							<div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search" checked type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По номеру
+						        </label>
+						    </div>
+						    <div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search"   type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По остановке
+						        </label>
+						    </div>
+						     <div class="radio radio-sm">
+						       <label>
+						    	   <input name="label-search"   type="radio" value="">
+						           <span class="icon-radio"><span></span></span>
+						   		   По улице
+						        </label>
+						    </div>
+						    <div id="search-box-slider">
+								<div class="slider"></div>
+							</div>
+						</div>
+			        </form>
+
+			    </div>
+	    	</div>
+	    	<div role="main">
+	    		<div class="container">
+		    		<h1 class="bordered"><span>Пример заголовка h1</span></h1>
+		    		<h2>Пример заголовка h2</h2>
+		    		<h3>Пример заголовка h3</h3>
+		    		<h4>Пример заголовка h4</h4>
+		    		<a class="btn btn-default" href="">btn default</a>
+		    		<a class="btn btn-success" href="">btn success</a>
+		    		<p>Текст в параграфе</p>
+		    		<p>Текст в параграфе2</p>
+					<a href="http://marshrutki.net/route/isearch">Ссылка</a>
+					<h3>Обычная форма</h3>
+					<div class="row">
+						<div class="col-md-6">
+						<form role="form ">
+						  <div class="form-group has-success">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group has-error">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						    <p class="help-block">Example block-level help text here.</p>
+						  </div>
+						  <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+						</div>
+					</div>
+					<h3>Горизонтальная форма</h3>
+					<div class="row">
+						<div class="col-md-6">
+							<form class="form-horizontal" role="form">
+							  <div class="form-group">
+							    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+							    <div class="col-sm-10">
+							      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+							    <div class="col-sm-10">
+							      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="submit" class="btn btn-default">Sign in</button>
+							    </div>
+							  </div>
+							</form>
+						</div>
+					</div>
+				</div>
+		   
+			</div>
+			<div class="banners">
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-6">
+		    				<div class="banner"></div>
+		    			</div>
+		    			<div class="col-md-6">
+		    				<div class="banner"></div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>    
+	    </main>
+	</div>
+	<footer id="footer" role="contentinfo">
+    	<div class="container">
+    		<nav class="hidden-xs nav-bottom">
+	    		<ul>
+	    			<li><a href="">Главная</a></li>
+	    			<li><a href="">О проекте</a></li>
+	    			<li><a href="">Обратная связь</a></li>
+    			</ul>
+    		</nav>
+    		<a class="brand" href="#">
+	      		<img alt="" src="img/brand.png">
+	      	</a>
+	      	<p class="copy">© 2014 Marshrutki.net</p>
+    	</div>
+	</footer>
+  </body>
+</html>
